@@ -1,13 +1,13 @@
-Anna Rybakova
+### Anna Rybakova   <img align="right" src="foto.jpg">
 
-Phone Number: +375 29 7092902
+**Phone Number: +375 29 7092902**
 
-anna_left@mail.ru
+[anna_left@mail.ru](mailto:anna_left@mail.ru)
 
  
 
 
-Education
+#### Education ####
 
 Faculty of Applied Mathematics and Control Processes
 
@@ -15,16 +15,18 @@ Saint-Peterburg State University
 
  
 
-Work experience
+#### Work experience ####
 
 2010 – present
 
-LLC PROSTORETAIL Lead Developer
+**LLC PROSTORETAIL** Lead Developer
 
 2009 – 2010
 
-company group Alutech Lead Developer
+**company group Alutech** Lead Developer
 
 2005 - 2009
 
-LLC Akvapromresurs Lead Developer, manager of the sector of development and support of information technologies
+**LLC Akvapromresurs** Lead Developer, manager of the sector of development and support of information technologies
+
+ 
