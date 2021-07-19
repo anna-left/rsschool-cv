@@ -1,4 +1,4 @@
-### Anna Rybakova   <img align="right" src="foto.jpg">
+## <u>Anna Rybakova</u>   <img align="right" src="foto.jpg">
 
 **Phone Number: +375 29 7092902**
 
@@ -7,7 +7,7 @@
  
 
 
-#### Education ####
+### Education ###
 
 Faculty of Applied Mathematics and Control Processes
 
@@ -15,7 +15,7 @@ Saint-Peterburg State University
 
  
 
-#### Work experience ####
+### Work experience ###
 
 2010 – present
 
@@ -23,7 +23,7 @@ Saint-Peterburg State University
 
 2009 – 2010
 
-**company group Alutech** Lead Developer
+**Company group Alutech** Lead Developer
 
 2005 - 2009
 
