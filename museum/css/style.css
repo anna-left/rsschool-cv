@@ -1,0 +1,852 @@
+/* forum-regular - latin */
+
+@font-face {
+  font-family: "Forum";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../assets/fonts/forum-v11-latin-regular.eot");
+  /* IE9 Compat Modes */
+  src: local(""),
+    url("../assets/fonts/forum-v11-latin-regular.eot?#iefix") format("embedded-opentype"),
+    url("../assets/fonts/forum-v11-latin-regular.woff2") format("woff2"),
+    url("../assets/fonts/forum-v11-latin-regular.woff") format("woff"),
+    url("../assets/fonts/forum-v11-latin-regular.ttf") format("truetype"),
+    url("../assets/fonts/forum-v11-latin-regular.svg#Forum") format("svg");
+  /* Legacy iOS */
+}
+
+
+/* roboto-100 - latin */
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 100;
+  src: url("../assets/fonts/roboto-v27-latin-100.eot");
+  /* IE9 Compat Modes */
+  src: local(""),
+    url("../assets/fonts/roboto-v27-latin-100.eot?#iefix") format("embedded-opentype"),
+    url("../assets/fonts/roboto-v27-latin-100.woff2") format("woff2"),
+    url("../assets/fonts/roboto-v27-latin-100.woff") format("woff"),
+    url("../assets/fonts/roboto-v27-latin-100.ttf") format("truetype"),
+    url("../assets/fonts/roboto-v27-latin-100.svg#Roboto") format("svg");
+  /* Legacy iOS */
+}
+
+/* roboto-300 - latin */
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../assets/fonts/roboto-v27-latin-300.eot");
+  /* IE9 Compat Modes */
+  src: local(""),
+    url("../assets/fonts/roboto-v27-latin-300.eot?#iefix") format("embedded-opentype"),
+    url("../assets/fonts/roboto-v27-latin-300.woff2") format("woff2"),
+    url("../assets/fonts/roboto-v27-latin-300.woff") format("woff"),
+    url("../assets/fonts/roboto-v27-latin-300.ttf") format("truetype"),
+    url("../assets/fonts/roboto-v27-latin-300.svg#Roboto") format("svg");
+  /* Legacy iOS */
+}
+
+/* roboto-500 - latin */
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../assets/fonts/roboto-v27-latin-500.eot");
+  /* IE9 Compat Modes */
+  src: local(""),
+    url("../assets/fonts/roboto-v27-latin-500.eot?#iefix") format("embedded-opentype"),
+    url("../assets/fonts/roboto-v27-latin-500.woff2") format("woff2"),
+    url("../assets/fonts/roboto-v27-latin-500.woff") format("woff"),
+    url("../assets/fonts/roboto-v27-latin-500.ttf") format("truetype"),
+    url("../assets/fonts/roboto-v27-latin-500.svg#Roboto") format("svg");
+  /* Legacy iOS */
+}
+
+html {
+  box-sizing: border-box;
+  /* в размерах блоков учитывать любые границы и внутренние отступы */
+  scroll-behavior: smooth;
+  /* плавная прокрутка */
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  /* наследуется от родителя для всех элементов */
+}
+
+body {
+  margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  /* изображение занимает всю шириу отведенного под него контейнера, подстраиваясь по высоте пропорционально */
+}
+
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.dark__background {
+  background-color: #030303;
+}
+
+.light__background {
+  background-color: #e5e5e5;
+}
+
+.color__white {
+  color: #ffffff;
+}
+
+.color__gold {
+  color: #9d8665;
+}
+
+
+/* header start */
+
+.header {
+  top: 74px;
+  position: absolute;
+  /* position: fixed; */
+  /* при прокрутке будет оставаться на месте */
+  /* накладывается на секцию welcome */
+  left: 0;
+  width: 100%;
+}
+
+.header__wrapper {
+  display: flex;
+  height: 50px;
+  flex-wrap: wrap;
+  /* перенос контента */
+  align-items: center;
+  /* центрирование по вертикали */
+  justify-content: space-between;
+  /* выравнивание по горизонтали по краям блока */
+  color: #ffffff;
+}
+
+.logo {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.logo:active,
+.logo:focus,
+.logo:hover {
+  opacity: 75%;
+  text-decoration: underline;
+  /* при фокусировании на ссылку уменьшается яркость надписи на 75%
+и добавляется подчеркивание */
+}
+
+.logo__name {
+  width: 49px;
+  padding-left: 21px;
+  font-family: "Forum", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 50px;
+  /* identical to box height, or 179% */
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.nav__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.nav__item {
+  margin-right: 75px;
+}
+
+.nav__item:last-child {
+  margin-right: 0;
+  /* псевдоселектор :last-child указывает на последний дочерний элемент
+внутри нашего списка; у него мы обрезаем отступ*/
+}
+
+.nav__link {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  color: #ffffff;
+  font-size: 22px;
+  line-height: 50px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  transition: 0.2s all;
+  /* задержка 0.2с */
+}
+
+.nav__link:active,
+.nav__link:focus,
+.nav__link:hover {
+  opacity: 75%;
+  text-decoration: underline;
+  /* при фокусировании на ссылку уменьшается яркость надписи на 75%
+и добавляется подчеркивание */
+}
+
+
+/* header end */
+
+
+/* welcome start */
+
+.welcome {
+  /* background-color: #030303; */
+  padding-top: 200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.welcome__block {
+  max-width: 1920px;
+  min-height: 750px;
+  background: url("../assets/img/welcome_background.jpg") no-repeat;
+  background-position: right bottom;
+  /* background-position: calc(100% - 1px) calc(100% - 1px); */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section__title__welcom {
+  padding-top: 114px;
+  padding-bottom: 26px;
+}
+
+.section__title {
+  font-family: "Forum", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 80px;
+  line-height: 90px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  /* color: #FFFFFF; */
+}
+
+.welcome__subtitle {
+  width: 445px;
+  height: 33px;
+  left: 0;
+  top: 206px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 28px;
+  line-height: 33px;
+  letter-spacing: 2px;
+  color: #ffffff;
+  margin-bottom: 76px;
+  white-space: nowrap;
+}
+
+.welcome__button {
+  width: 360px;
+  height: 75px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 22px;
+  line-height: 26px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 2px;
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #710707;
+  border-radius: 10px;
+  justify-content: center;
+  transition: 0.2s all;
+  /* задержка 0.2с */
+}
+
+.welcome__button:active,
+.welcome__button:focus,
+.welcome__button:hover {
+  background-color: #5e0606;
+  /* при фокусировании на ссылку цвет фона темнеет */
+  text-decoration: underline;
+  /* подчеркивание */
+}
+
+
+/* welcome end */
+
+
+/* visiting start */
+
+.visiting {
+  /* min-height: 1265px; */
+  padding-top: 75px;
+  /* background-color: white; */
+}
+
+.underline__title {
+  position: relative;
+}
+
+.underline__title::after {
+  content: "";
+  position: absolute;
+  bottom: -25px;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background-color: #710707;
+}
+
+.visiting__cards {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  /* центрирование по вертикали */
+  justify-content: space-between;
+  min-height: 900px;
+  padding-top: 103px;
+  /* margin-top: 25px; */
+  /* border-top: 3px solid #9D8665; */
+}
+
+.visiting__card {
+  width: 440px;
+  padding-bottom: 74px;
+}
+
+.visiting__card__title {
+  font-family: "Forum", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 35px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  padding-top: 25px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  min-height: 44px;
+  width: 440px;
+  /* border-bottom: 3px solid #8d795c */
+}
+
+.underline__visiting {
+  position: relative;
+}
+
+.underline__visiting::after {
+  content: "";
+  width: 300px;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: #710707;
+}
+
+.visiting__card__subtitle {
+  width: 440px;
+  left: 0;
+}
+
+.visiting__card__link1 {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 22px;
+  line-height: 26px;
+  text-decoration: none;
+  /* padding-bottom: 10px; */
+  display: block;
+  transition: 0.2s all;
+  color: #000000;
+  /* задержка 0.2с */
+}
+
+.visiting__card__link2 {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 18px;
+  line-height: 21px;
+  text-decoration: none;
+  display: block;
+  padding-top: 12px;
+  transition: 0.2s all;
+  color: #000000;
+  /* задержка 0.2с */
+}
+
+.visiting__card__link1:active,
+.visiting__card__link1:focus,
+.visiting__card__link1:hover,
+.visiting__card__link2:active,
+.visiting__card__link2:focus,
+.visiting__card__link2:hover {
+  opacity: 75%;
+  /* при фокусировании на ссылку уменьшается яркость надписи на 75%  */
+  text-decoration: underline;
+  /* подчеркивание */
+}
+
+
+/* visiting end */
+
+
+/* explore */
+
+.explore {
+  height: 865px;
+  /* margin: 0 auto;
+  width: 100%;
+  border-radius: 0px; */
+}
+
+.explore_block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: 715px;
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+
+.explore__descriptions {
+  padding-top: 102px;
+}
+
+.explore__description {
+  width: 660px;
+  height: 77px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 38px;
+  /* or 175% */
+  color: #ffffff;
+  padding-bottom: 102px;
+}
+
+.explore__description__block {
+  width: 660px;
+}
+
+.explore__picture__block {
+  width: 720px;
+  height: 700px;
+  padding-top: 15px;
+}
+
+
+/* explore end */
+
+
+/* Video start */
+
+.video__picture__block {
+  padding-top: 90px;
+  /* padding-bottom: 75px; */
+  position: relative;
+}
+
+.play__ico__bg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.video__title {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 40px;
+  padding-bottom: 75px;
+}
+
+.video_description {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 38px;
+  width: 720px;
+  /* or 175% */
+  align-items: center;
+  color: #000000;
+}
+
+
+/* Video end */
+
+
+/* Tickets start */
+
+.tickets_block {
+  /* height: 720; */
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+
+.tickets__description__block {
+  padding-top: 103px;
+  display: flex;
+  flex-wrap: wrap;
+  /* align-items: center; */
+}
+
+.Ticket__Type__block {
+  padding-left: 60px;
+  /* width: 480px; */
+  width: calc(100% - 895px);
+}
+
+.Ticket__Type__title {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 33px;
+  /* identical to box height */
+  color: #ffffff;
+}
+
+
+/* The container */
+
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-top: 50px;
+  cursor: pointer;
+  user-select: none;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 26px;
+  /* identical to box height */
+  color: #ffffff;
+}
+
+
+/* Hide the browser's default radio button */
+
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+
+/* Create a custom radio button */
+
+.checkmark {
+  position: absolute;
+  left: 0;
+  height: 17px;
+  width: 17px;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+}
+
+
+/* при наведении мыши кнопка окрашивается в серый цвет */
+
+.container:hover input ~ .checkmark {
+  background-color: rgb(88, 88, 88);
+}
+
+
+/* When the radio button is checked, add a blue background */
+
+.container input:checked ~ .checkmark {
+  background-color: #ffffff;
+}
+
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+
+.checkmark::after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+
+/* Show the indicator (dot/circle) when checked */
+
+.container input:checked ~ .checkmark::after {
+  display: block;
+}
+
+
+/* стиль радиокнопки */
+
+.container .checkmark::after {
+  top: 7px;
+  left: 7px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #ffffff;
+}
+
+.Amount_block {
+  /* padding-left: 240px; */
+  width: 175px;
+  padding-bottom: 11px;
+  text-align: right;
+}
+
+.categories {
+  text-align: left;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 26px;
+  color: #ffffff;
+  padding-bottom: 16px;
+}
+
+.counters {
+  width: 150px;
+  margin-left: 25px;
+  padding-top: 11px;
+}
+
+.counter {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+  border: 3px solid #ffffff;
+  border-radius: 0;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  margin-top: 14px;
+  margin-bottom: 35px;
+  padding-left: 14px;
+  padding-right: 14px;
+}
+
+.counter__button {
+  /* padding-left: 14px;
+    padding-right: 14px; */
+  text-align: center;
+  color: #ffffff;
+  background-color: #030303;
+  border: none;
+  font-size: 32px;
+  line-height: 37px;
+}
+
+.number {
+  text-align: center;
+  margin: 0;
+  color: #ffffff;
+  background-color: #030303;
+  border: none;
+  font-size: 22px;
+  line-height: 26px;
+  max-width: 58px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  /* убираем стрелки приращения/уменьшения счетчика */
+  appearance: none;
+  margin: 0;
+}
+
+.total {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  max-height: 33px;
+}
+
+.total__sum {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 33px;
+  color: #ffffff;
+  background-color: #030303;
+  border: none;
+  padding: 0;
+  width: 53px;
+}
+
+.buy__now {
+  width: 175px;
+  height: 50px;
+  left: 0;
+  top: 0;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 26px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 2px;
+  color: #000000;
+  margin-top: 50px;
+  justify-content: center;
+  /* margin: auto: */
+}
+
+
+/* Tickets end */
+
+
+/* Contacts start */
+
+.Contacts {
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+
+.contacts__block {
+  height: 723px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: top;
+  justify-content: space-between;
+  padding-top: 103px;
+  /* padding-bottom: 75px; */
+}
+
+.contacts__subtitle {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 33px;
+  color: #000000;
+  padding-top: 10px;
+  padding-bottom: 37px;
+}
+
+.contacts__lines {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 26px;
+  /* identical to box height */
+  color: #000000;
+  padding-bottom: 20px;
+}
+
+.contacts__mail {
+  text-decoration: none;
+  color: #000000;
+}
+
+.contacts__mail:active,
+.contacts__mail:focus,
+.contacts__mail:hover {
+  opacity: 75%;
+  text-decoration: underline;
+  color: rgb(17, 0, 255);
+  /* при фокусировании на ссылку уменьшается яркость надписи на 75%
+и добавляется подчеркивание */
+}
+
+
+/* Contacts end */
+
+
+/* footer start */
+
+.footer_block {
+  display: grid;
+  grid-template-rows: repeat(1, 1fr);
+  grid-template-columns: 195px auto 336px;
+  column-gap: 145px;
+  /* padding-left: 145px; */
+  /* padding-bottom: 75px; */
+  padding-top: 75px;
+}
+
+.footer__logo {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-bottom: 175px;
+}
+
+.footer__logo:active,
+.footer__logo:focus,
+.footer__logo:hover {
+  opacity: 75%;
+  text-decoration: underline;
+  /* при фокусировании на ссылку уменьшается яркость надписи на 75%
+и добавляется подчеркивание */
+}
+
+.footer__nav {
+  width: 366px;
+}
+
+.footer__list {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 153px;
+}
+
+.nav__social {
+  padding-top: 88px;
+  /* Width: 360px; */
+}
+
+.social__item {
+  margin-left: 24px;
+}
+
+.social__item:first-child {
+  margin-left: 0;
+  /* псевдоселектор :last-child указывает на первый дочерний элемент
+внутри нашего списка; у него мы обрезаем отступ*/
+}
+
+.social__ico {
+  transition: 0.2s all;
+}
+
+.social__item:hover {
+  filter: invert(42%) sepia(93%) saturate(252%) hue-rotate(357deg) brightness(119%) contrast(119%);
+}
+
+/* footer end */
