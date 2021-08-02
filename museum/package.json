@@ -1,0 +1,19 @@
+{
+    "name": "museum",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "dependencies": {},
+    "devDependencies": {
+        "editorconfig": "^0.15.3",
+        "htmlhint": "^0.15.1",
+        "stylelint": "^13.13.1",
+        "stylelint-config-htmlacademy": "^0.1.10"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "htmlhint": "htmlhint index.html"
+    },
+    "author": "Anna",
+    "license": "ISC"
+}
