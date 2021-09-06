@@ -13,6 +13,8 @@ Faculty of Applied Mathematics and Control Processes
 
 Saint-Peterburg State University
 
+JavaScript/Front-end Pre-School (RS school)
+
  
 
 ### Work experience ###
