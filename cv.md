@@ -6,7 +6,6 @@
 
  
 
-
 ### Education ###
 
 Faculty of Applied Mathematics and Control Processes
