@@ -1,0 +1,21 @@
+header {
+text-align: center;
+margin-top: 10px;
+}
+
+.inner {
+    width: 600px;
+    border: 1px solid red;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h1 {
+    font-size: 24pt;
+    font-family: Georgia, Times, serif;
+    font-weight: bold;
+}
+
+dd {
+    font-weight: bold;
+}
