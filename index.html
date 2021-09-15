@@ -1,81 +1,221 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <title>cv A.Rybakova</title>
-  <link rel="stylesheet" href="style2.css">
+    <meta charset="utf-8">
+    <title>Anna Rybakova CV</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+    <script>
+        hljs.initHighlightingOnLoad('js', 'html', 'css');
+    </script>
 </head>
 
-<body>
+<body class="inner">
+    <main>
+        <header>
 
-  <main class="inner">
-    <header>
-      <h1>Anna Rybakova</h1>
-      <img alt="foto" src="foto2.jpg" width="108" height="143">
-    </header>
-    <section>
-      <ul>
-        <li>
-          <h3>Phone Number: +375 29 7092902</h3></li>
-        <li>
-          <h3>e-mail: <a href="mailto:anna_left@mail.ru">anna_left@mail.ru</a></h3></li>
-      </ul>
-    </section>
-    <article>
-      <h2>Profile</h2>
-      <p>I have a lot of experience working as 1C programmer, but now I’m looking to change my area of expertise.
-      </p>
-    </article>
-    <section>
-      <h2>Education</h2>
-      <p>Saint-Peterburg State University
-        <br>Faculty of Applied Mathematics and Control Processes </p>
-    </section>
+            <div class="left__panel">
+                <div class="photo">
 
-    <section>
-      <h2>Work experience</h2>
-      <dl>
-        <dt>2010 – present</dt>
-        <dd>LLC PROSTORETAIL</dd>
-        <dd>lead developer</dd>
-        <dt>2009 – 2010</dt>
-        <dd>Company group Alutech</dd>
-        <dd>lead developer</dd>
-        <dt>2005 – 2009</dt>
-        <dd>LLC Aquapromresurs</dd>
-        <dd>lead developer</dd>
-      </dl>
-    </section>
+                    <img alt="photo" src="./images/photo.jpg" width="120" height="168">
 
-    <section>
-      <h2>Code example</h2>
-      <a href="https://github.com/anna-left/rsschool-cv">https://github.com/anna-left/rsschool-cv</a>
-    </section>
+                </div>
+            </div>
 
-    <section>
-      <h2>Skills</h2>
-      <ul>
-        <li>Good at teamwork </li>
-        <li>Communicability</li>
-        <li>Ability to understand the customer</li>
-      </ul>
-    </section>
+            <div class="right__panel ">
+                <div class="conteiner">
+                    <div class="header__title">
+                        <h1>Anna <br> Rybakova</h1>
+                        <h3>Belarus, Minsk</h3>
+                    </div>
+                    <nav>
+                        <ul>
+                            <li class="li_nav">
+                                <a href="#Contacts__label">Contacts</a>
+                            </li>
+                            <li class="li_nav">
+                                <a href="#Profile__label">Profile</a>
+                            </li>
+                            <li class="li_nav">
+                                <a href="#Education__label">Education</a>
+                            </li>
+                            <li class="li_nav">
+                                <a href="#Work__experience__label">Work experience</a>
+                            </li>
+                            <li class="li_nav">
+                                <a href="#Technical__skills__label">Technical skills</a>
+                            </li>
+                            <li class="li_nav">
+                                <a href="#Code__example__label">Code example</a>
+                            </li>
+                            <li class="li_nav">
+                                <a href="#Languages__label">Languages</a>
+                            </li>
 
-    <section>
-      <h2>Known languages</h2>
-      <p>English, Pre-Intermediate</p>
-    </section>
-  </main>
-  <footer>
-    <p><a href="https://github.com/anna-left">https://github.com/anna-left</a>
-      <time datetime="2021">2021</time>
-    </p>
 
-    <p>
-      <a href="https://rs.school/js/"><img src="https://rs.school/images/rs_school_js.svg" width="150" alt="logo"></a>
-    </p>
-  </footer>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+        </header>
+        <section class="wrap" id="Contacts__label">
+            <div class="left__panel">
+                <h2>Contacts</h2>
+
+            </div>
+            <div class="right__panel ">
+                <ul class="contacts__list ">
+                    <li class="contacts__items ">
+                        <img src="./images/phone.svg " width="16" height="16" alt="phone "> +375 29 7092902
+                    </li>
+
+                    <li class="contacts__items">
+                        <a href="mailto:anna_left@mail.ru ">
+                            <img src="./images/email.svg " width="16" height="16" alt="email "> anna_left@mail.ru</a>
+                    </li>
+                    <li class="contacts__items ">
+                        <a href="https://t.me/AnnaFavor ">
+                            <img src="./images/telegram.svg " width="16" height="16" alt="telegram "> t.me/AnnaFavor</a>
+                </ul>
+            </div>
+
+        </section>
+        <section class="wrap " id="Profile__label">
+            <div class="left__panel ">
+                <h2>Profile</h2>
+            </div>
+            <div class="right__panel ">
+                <p>I have a lot of experience working as 1C programmer, <br>but now IвЂ™m looking to change my area of expertise.
+                </p>
+            </div>
+        </section>
+        <section class="wrap " id="Education__label">
+            <div class="left__panel ">
+                <h2>Education</h2>
+            </div>
+            <div class="right__panel ">
+                <ul>
+                    <li>
+                        <p>Saint-Peterburg State University
+                            <br>Faculty of Applied Mathematics and Control Processes
+                        </p>
+                    </li>
+                    <li>
+                        <p>JAVASCRIPT/FRONT-END Pre-School
+                            <br>Rolling Scopes School
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="wrap " id="Work__experience__label">
+            <div class="left__panel ">
+                <h2>Work experience</h2>
+            </div>
+            <div class="right__panel ">
+                <dl>
+                    <dt>2010 - present</dt>
+                    <dd>
+                        <h5>LLC PROSTORETAIL</h5>
+                    </dd>
+                    <dd>
+                        <h5>lead developer</h5>
+                    </dd>
+                    <dt>2009 - 2010</dt>
+                    <dd>
+                        <h5>Company group Alutech</h5>
+                    </dd>
+                    <dd>
+                        <h5>lead developer</h5>
+                    </dd>
+                    <dt>2005 - 2009</dt>
+                    <dd>
+                        <h5>LLC Aquapromresurs</h5>
+                    </dd>
+                    <dd>
+                        <h5>lead developer</h5>
+                    </dd>
+                </dl>
+            </div>
+        </section>
+
+        <section class="wrap " id="Technical__skills__label">
+            <div class="left__panel ">
+                <h2>Technical skills</h2>
+            </div>
+            <div class="right__panel ">
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Git</li>
+                    <li>VScode</li>
+                    <li>Figma</li>
+                    <li>1c 7.7, 8.3</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="wrap " id="Code__example__label">
+            <div class="left__panel ">
+                <h2>Code example</h2>
+            </div>
+            <div class="right__panel">
+                <p>
+                    <a class="code__example" href="https://rolling-scopes-school.github.io/anna-left-JSFEPRESCHOOL/custom-video-player/" target="blank">
+                        <img src="./images/custom-video-player.jpg" width="147" height="70" alt="custom-video-player">
+                    </a>
+                    <a class="code__example" href="https://rolling-scopes-school.github.io/anna-left-JSFEPRESCHOOL/vertical-slider/" target="blank">
+                        <img src="./images/vertical-slider.jpg" width="144" height="70" alt="vertical-slider">
+                    </a>
+                    <a class="code__example" href="https://www.codewars.com/users/anna-left/completed_solutions" target="blank">
+                        <img src="./images/codewars-logo.png" width="70" height="70" alt="codewars">
+                    </a>
+                </p>
+
+                <pre><code class="language-js">function euclideanDistance(point1, point2) {
+    let sum = 0;
+    for (let i = 0; i &lt; point1.length; i += 1) {
+        sum = sum + (point1[i] - point2[i]) ** 2;
+    }
+    sum = Math.sqrt(sum);
+    sum = Math.round(sum * 100) / 100;
+    return sum;
+} </code></pre>
+
+
+            </div>
+        </section>
+
+        <section class="wrap " id="Languages__label">
+            <div class="left__panel ">
+                <h2>Languages</h2>
+            </div>
+            <div class="right__panel ">
+                <ul>
+                    <li>Russian - Native</li>
+                    <li>English - A2</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p class="footer__conteiner">
+            <a href="https://rs.school/js/"><img src="https://rs.school/images/rs_school_js.svg" width="100" alt="logo"></a>
+        </p>
+
+        <p class="footer__conteiner">
+            <time class="year" datetime="2021 ">2021</time>
+        </p>
+        <p class="footer__conteiner">
+            <a class="github" href="https://github.com/anna-left "></a>
+        </p>
+    </footer>
+
 </body>
 
 </html>
