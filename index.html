@@ -18,9 +18,7 @@
 
             <div class="left__panel">
                 <div class="photo">
-
                     <img alt="photo" src="./images/photo.jpg" width="120" height="168">
-
                 </div>
             </div>
 
@@ -48,13 +46,14 @@
                                 <a href="#Technical__skills__label">Technical skills</a>
                             </li>
                             <li class="li_nav">
+                                <a href="#My__projects__label">My projects</a>
+                            </li>
+                            <li class="li_nav">
                                 <a href="#Code__example__label">Code example</a>
                             </li>
                             <li class="li_nav">
                                 <a href="#Languages__label">Languages</a>
                             </li>
-
-
                         </ul>
                     </nav>
                 </div>
@@ -161,33 +160,50 @@
             </div>
         </section>
 
+        <section class="wrap " id="My__projects__label">
+            <div class="left__panel ">
+                <h2>My projects</h2>
+            </div>
+            <div class="right__panel">
+                <div class="figure__conteiner">
+
+                    <a class="my__figure"
+                        href="https://rolling-scopes-school.github.io/anna-left-JSFEPRESCHOOL/custom-video-player/"
+                        target="blank">
+                        <figure class="my__figure">
+                            <img src="./images/custom-video-player.jpg" width="147" height="70"
+                                alt="custom-video-player">
+                            <figcaption>Custom video player<br>(Html, Css, JS)</figcaption>
+                        </figure>
+                    </a>
+                    <a class="my__figure"
+                        href="https://rolling-scopes-school.github.io/anna-left-JSFEPRESCHOOL/vertical-slider/"
+                        target="blank">
+                        <figure class="my__figure">
+                            <img src="./images/vertical-slider.jpg" width="144" height="70" alt="vertical-slider">
+                            <figcaption>Vertical slider<br>(Html, Css, JS)</figcaption>
+                        </figure>
+                    </a>
+                    <!-- <a class="code__example" href="https://www.codewars.com/users/anna-left/completed_solutions" target="blank">
+                        <img src="./images/codewars-logo.png" width="70" height="70" alt="codewars">
+                    </a> -->
+                </div>
+            </div>
+        </section>
         <section class="wrap " id="Code__example__label">
             <div class="left__panel ">
                 <h2>Code example</h2>
             </div>
             <div class="right__panel">
-                <p>
-                    <a class="code__example" href="https://rolling-scopes-school.github.io/anna-left-JSFEPRESCHOOL/custom-video-player/" target="blank">
-                        <img src="./images/custom-video-player.jpg" width="147" height="70" alt="custom-video-player">
-                    </a>
-                    <a class="code__example" href="https://rolling-scopes-school.github.io/anna-left-JSFEPRESCHOOL/vertical-slider/" target="blank">
-                        <img src="./images/vertical-slider.jpg" width="144" height="70" alt="vertical-slider">
-                    </a>
-                    <a class="code__example" href="https://www.codewars.com/users/anna-left/completed_solutions" target="blank">
-                        <img src="./images/codewars-logo.png" width="70" height="70" alt="codewars">
-                    </a>
-                </p>
-
                 <pre><code class="language-js">function euclideanDistance(point1, point2) {
-    let sum = 0;
-    for (let i = 0; i &lt; point1.length; i += 1) {
-        sum = sum + (point1[i] - point2[i]) ** 2;
-    }
-    sum = Math.sqrt(sum);
-    sum = Math.round(sum * 100) / 100;
-    return sum;
+  let sum = 0;
+  for (let i = 0; i &lt; point1.length; i += 1) {
+      sum = sum + (point1[i] - point2[i]) ** 2;
+  }
+  sum = Math.sqrt(sum);
+  sum = Math.round(sum * 100) / 100;
+  return sum;
 } </code></pre>
-
 
             </div>
         </section>
@@ -206,7 +222,8 @@
     </main>
     <footer>
         <p class="footer__conteiner">
-            <a href="https://rs.school/js/"><img src="https://rs.school/images/rs_school_js.svg" width="100" alt="logo"></a>
+            <a href="https://rs.school/js/"><img src="https://rs.school/images/rs_school_js.svg" width="100"
+                    alt="logo"></a>
         </p>
 
         <p class="footer__conteiner">
